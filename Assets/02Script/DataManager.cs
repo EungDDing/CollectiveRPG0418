@@ -47,13 +47,4 @@ public class DataManager : Singleton<DataManager>
     {
         InitDataManager();
     }
-    private void Start()
-    {
-        Debug.Log("text");
-        Debug.Log(characterDataDictionary[1001].Rank);
-        Debug.Log(characterDataDictionary[1001].Name);
-        Debug.Log(characterDataDictionary[1001].DefenceType);
-        Debug.Log(characterDataDictionary[1001].AttackType);
-        Debug.Log(characterDataDictionary[1001].Skill);
-    }
 }
