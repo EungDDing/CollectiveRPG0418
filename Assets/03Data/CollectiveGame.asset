@@ -214,3 +214,64 @@ MonoBehaviour:
     Armor: 60
     Attack: 86
     Exp: 300
+  PlayerLevelData:
+  - PlayerLevel: 1
+    MaxEnergy: 100
+    PlayerExp: 500
+  - PlayerLevel: 2
+    MaxEnergy: 115
+    PlayerExp: 1000
+  - PlayerLevel: 3
+    MaxEnergy: 130
+    PlayerExp: 1500
+  - PlayerLevel: 4
+    MaxEnergy: 145
+    PlayerExp: 2000
+  - PlayerLevel: 5
+    MaxEnergy: 160
+    PlayerExp: 2500
+  - PlayerLevel: 6
+    MaxEnergy: 175
+    PlayerExp: 3000
+  - PlayerLevel: 7
+    MaxEnergy: 190
+    PlayerExp: 3500
+  - PlayerLevel: 8
+    MaxEnergy: 205
+    PlayerExp: 4000
+  - PlayerLevel: 9
+    MaxEnergy: 220
+    PlayerExp: 4500
+  - PlayerLevel: 10
+    MaxEnergy: 235
+    PlayerExp: 5000
+  - PlayerLevel: 11
+    MaxEnergy: 250
+    PlayerExp: 5500
+  - PlayerLevel: 12
+    MaxEnergy: 250
+    PlayerExp: 6000
+  - PlayerLevel: 13
+    MaxEnergy: 250
+    PlayerExp: 6500
+  - PlayerLevel: 14
+    MaxEnergy: 250
+    PlayerExp: 7000
+  - PlayerLevel: 15
+    MaxEnergy: 250
+    PlayerExp: 7500
+  - PlayerLevel: 16
+    MaxEnergy: 250
+    PlayerExp: 8000
+  - PlayerLevel: 17
+    MaxEnergy: 250
+    PlayerExp: 8500
+  - PlayerLevel: 18
+    MaxEnergy: 250
+    PlayerExp: 9000
+  - PlayerLevel: 19
+    MaxEnergy: 250
+    PlayerExp: 9500
+  - PlayerLevel: 20
+    MaxEnergy: 250
+    PlayerExp: 10000

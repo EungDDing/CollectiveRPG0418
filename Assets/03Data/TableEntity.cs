@@ -26,3 +26,11 @@ public class LevelData_Entity
     public int Attack;
     public int Exp;
 }
+
+[System.Serializable]
+public class PlayerLevelData_Entity
+{
+    public int PlayerLevel;
+    public int MaxEnergy;
+    public int PlayerExp;
+}
