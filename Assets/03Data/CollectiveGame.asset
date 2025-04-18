@@ -1,0 +1,216 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd20e89a3c7d7eb44a80668569281428, type: 3}
+  m_Name: CollectiveGame
+  m_EditorClassIdentifier: 
+  CharacterData:
+  - ID: 1001
+    Name: "\uC18C\uC5F0"
+    Rank: 3
+    Weapon: AR
+    Role: Attack
+    Skill: "\uBB34\uCC28\uBCC4\uB09C\uC0AC"
+    SkillCost: 3
+    AttackType: Explosive
+    DefenceType: Light
+    Position: Middle
+  - ID: 1002
+    Name: "\uC815\uC740"
+    Rank: 3
+    Weapon: SR
+    Role: Attack
+    Skill: "\uAFF0\uB6AB\uAE30"
+    SkillCost: 3
+    AttackType: Piercing
+    DefenceType: Special
+    Position: Back
+  - ID: 1003
+    Name: "\uD61C\uC9C4"
+    Rank: 2
+    Weapon: SMG
+    Role: Defence
+    Skill: "\uB2E8\uB2E8\uD574\uC9C0\uAE30"
+    SkillCost: 3
+    AttackType: Mystic
+    DefenceType: Heavy
+    Position: Front
+  - ID: 1004
+    Name: "\uC8FC\uD76C"
+    Rank: 2
+    Weapon: HG
+    Role: Support
+    Skill: "\uCCB4\uB825\uD68C\uBCF5"
+    SkillCost: 2
+    AttackType: Mystic
+    DefenceType: Light
+    Position: Back
+  - ID: 1005
+    Name: "\uC7A5\uBBF8"
+    Rank: 2
+    Weapon: SG
+    Role: Attack
+    Skill: "\uD3ED\uD0C4\uB358\uC9C0\uAE30"
+    SkillCost: 4
+    AttackType: Explosive
+    DefenceType: Heavy
+    Position: Front
+  - ID: 1006
+    Name: "\uC9C0\uC6B0"
+    Rank: 2
+    Weapon: AR
+    Role: Attack
+    Skill: "\uAC15\uD654"
+    SkillCost: 2
+    AttackType: Piercing
+    DefenceType: Special
+    Position: Middle
+  - ID: 1007
+    Name: "\uCC44\uC6D0"
+    Rank: 1
+    Weapon: SMG
+    Role: Support
+    Skill: "\uC544\uAD70\uC9C0\uC6D0"
+    SkillCost: 3
+    AttackType: Explosive
+    DefenceType: Light
+    Position: Back
+  - ID: 1008
+    Name: "\uC218\uC544"
+    Rank: 1
+    Weapon: SR
+    Role: Attack
+    Skill: "\uBAA8\uB4E0\uC801\uC800\uACA9"
+    SkillCost: 4
+    AttackType: Piercing
+    DefenceType: Special
+    Position: Middle
+  - ID: 1009
+    Name: "\uC720\uB098"
+    Rank: 1
+    Weapon: SG
+    Role: Defence
+    Skill: "\uC5C4\uD3D0\uBB3C\uC124\uCE58"
+    SkillCost: 3
+    AttackType: Mystic
+    DefenceType: Special
+    Position: Front
+  - ID: 1010
+    Name: "\uC138\uC544"
+    Rank: 1
+    Weapon: HG
+    Role: Support
+    Skill: "\uBC29\uC5B4\uC9C0\uC6D0"
+    SkillCost: 2
+    AttackType: Explosive
+    DefenceType: Heavy
+    Position: Back
+  LevelData:
+  - Level: 1
+    HP: 15
+    Armor: 3
+    Attack: 10
+    Exp: 15
+  - Level: 2
+    HP: 45
+    Armor: 6
+    Attack: 14
+    Exp: 30
+  - Level: 3
+    HP: 75
+    Armor: 9
+    Attack: 18
+    Exp: 45
+  - Level: 4
+    HP: 105
+    Armor: 12
+    Attack: 22
+    Exp: 60
+  - Level: 5
+    HP: 135
+    Armor: 15
+    Attack: 26
+    Exp: 75
+  - Level: 6
+    HP: 165
+    Armor: 18
+    Attack: 30
+    Exp: 90
+  - Level: 7
+    HP: 195
+    Armor: 21
+    Attack: 34
+    Exp: 105
+  - Level: 8
+    HP: 225
+    Armor: 24
+    Attack: 38
+    Exp: 120
+  - Level: 9
+    HP: 255
+    Armor: 27
+    Attack: 42
+    Exp: 135
+  - Level: 10
+    HP: 285
+    Armor: 30
+    Attack: 46
+    Exp: 150
+  - Level: 11
+    HP: 315
+    Armor: 33
+    Attack: 50
+    Exp: 165
+  - Level: 12
+    HP: 345
+    Armor: 36
+    Attack: 54
+    Exp: 180
+  - Level: 13
+    HP: 375
+    Armor: 39
+    Attack: 58
+    Exp: 195
+  - Level: 14
+    HP: 405
+    Armor: 42
+    Attack: 62
+    Exp: 210
+  - Level: 15
+    HP: 435
+    Armor: 45
+    Attack: 66
+    Exp: 225
+  - Level: 16
+    HP: 465
+    Armor: 48
+    Attack: 70
+    Exp: 240
+  - Level: 17
+    HP: 495
+    Armor: 51
+    Attack: 74
+    Exp: 255
+  - Level: 18
+    HP: 525
+    Armor: 54
+    Attack: 78
+    Exp: 270
+  - Level: 19
+    HP: 555
+    Armor: 57
+    Attack: 82
+    Exp: 285
+  - Level: 20
+    HP: 585
+    Armor: 60
+    Attack: 86
+    Exp: 300
