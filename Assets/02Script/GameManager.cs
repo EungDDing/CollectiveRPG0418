@@ -1,7 +1,8 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class PlayerCharacterData
@@ -12,6 +13,7 @@ public class PlayerCharacterData
     public bool isOwned;
     public bool isAllocated;
 }
+
 [System.Serializable]
 public class PlayerData
 {
@@ -24,6 +26,13 @@ public class PlayerData
 
     public List<PlayerCharacterData> playerCharacters;
 }
+
+public enum SceneName
+{
+    TitleScene,
+    LobbyScene,
+}
+
 public class GameManager : Singleton<GameManager>
 {
     private PlayerData data;
@@ -50,7 +59,16 @@ public class GameManager : Singleton<GameManager>
         data.energy = 0;
         data.playerCharacters = new List<PlayerCharacterData>();
     }
+    private void InitPlayerCharacters()
+    {
+        data.playerCharacters = new List<PlayerCharacterData>();
 
+        foreach (var character in DataManager.Instance.GetAllCharacterData())
+        {
+            var characterData = character.Value;
+            PlayerCharacterData playerCharacterData = new PlayerCharacterData();
+        }
+    }
     // save & load player data
     private string dataPath;
     // save data
@@ -83,5 +101,13 @@ public class GameManager : Singleton<GameManager>
             return LoadData();
         }
         return false;
+    }
+    // scene manager
+    private SceneName nextSceneName;
+    public SceneName NextScene => nextSceneName;
+    public void AsyncLoadNextScene(SceneName nextScene)
+    {
+        nextSceneName = nextScene;
+        SceneManager.LoadScene(SceneName.LobbyScene.ToString());
     }
 }

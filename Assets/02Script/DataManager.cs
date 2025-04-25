@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -47,4 +47,9 @@ public class DataManager : Singleton<DataManager>
     {
         InitDataManager();
     }
+    public Dictionary<int, CharacterData_Entity> GetAllCharacterData()
+    {
+        return characterDataDictionary;
+    }
+    
 }
