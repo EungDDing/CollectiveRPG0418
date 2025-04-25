@@ -57,16 +57,29 @@ public class GameManager : Singleton<GameManager>
         data.gold = 0;
         data.gem = 1000;
         data.energy = 0;
-        data.playerCharacters = new List<PlayerCharacterData>();
+
+        InitPlayerCharacters();
     }
     private void InitPlayerCharacters()
     {
+        Debug.Log("Initalize player characters");
+
         data.playerCharacters = new List<PlayerCharacterData>();
 
-        foreach (var character in DataManager.Instance.GetAllCharacterData())
+        foreach (var characterData in DataManager.Instance.GetAllCharacterData())
         {
-            var characterData = character.Value;
+            CharacterData_Entity characterValue = characterData.Value;
+            
             PlayerCharacterData playerCharacterData = new PlayerCharacterData();
+            playerCharacterData.characterID = characterValue.ID;
+            playerCharacterData.level = 1;
+            playerCharacterData.exp = 0;
+            playerCharacterData.isOwned = false;
+            playerCharacterData.isAllocated = false;
+
+            data.playerCharacters.Add(playerCharacterData);
+
+            // collect character
         }
     }
     // save & load player data

@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class LobbyManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private CharacterData_Entity characterDataEntity;
+    private void Start()
     {
-        
+        GameManager.Instance.LoadData();
+        DataManager.Instance.InitDataManager();
+        Debug.Log(GameManager.Instance.Data.playerID);
     }
-
-    // Update is called once per frame
-    void Update()
+    public void CharacterButton()
     {
+        Debug.Log("»£√‚");
         
+        for (int i = 0; i < GameManager.Instance.Data.playerCharacters.Count; i++)
+        {
+            DataManager.Instance.GetCharacterData(GameManager.Instance.Data.playerCharacters[i].characterID, out characterDataEntity);
+            Debug.Log(GameManager.Instance.Data.playerCharacters[i].characterID +
+                " : " +characterDataEntity.Name + " : " + GameManager.Instance.Data.playerCharacters[i].isOwned);
+        }
     }
 }
