@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
-public class Character_Hyejin : CharacterBase
+public class Character_Chaewon : CharacterBase
 {
     public override void SetCharacterID()
     {
-        CharacterID = 1003;
+        CharacterID = 1007;
     }
 }
