@@ -5262,8 +5262,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5242363998558030112}
-  - component: {fileID: 8654435350941561760}
   - component: {fileID: 2669430886472968585}
+  - component: {fileID: 8391076955361781676}
   m_Layer: 0
   m_Name: Soyeon
   m_TagString: Untagged
@@ -5289,27 +5289,6 @@ Transform:
   - {fileID: 5265448340152507104}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &8654435350941561760
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8406336258100788281}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 193a954f66f3cf943bceaccec7ce331e, type: 3}
-  m_Controller: {fileID: 9100000, guid: 0d64c286960145a458c1bb7e7e5e028a, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &2669430886472968585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5339,6 +5318,27 @@ MonoBehaviour:
     Armor: 0
     Attack: 0
     Exp: 0
+--- !u!95 &8391076955361781676
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8406336258100788281}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 0045840c150eded4ba4b2e90fc3b5297, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6504e2717b20d854fa4a33cb95a56da9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8541551073815359808
 GameObject:
   m_ObjectHideFlags: 0

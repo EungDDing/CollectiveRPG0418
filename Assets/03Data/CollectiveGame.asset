@@ -23,6 +23,7 @@ MonoBehaviour:
     AttackType: Explosive
     DefenceType: Light
     Position: Middle
+    CharacterImage: CharacterImage/Soyeon
   - ID: 1002
     Name: "\uC815\uC740"
     Rank: 3
@@ -33,6 +34,7 @@ MonoBehaviour:
     AttackType: Piercing
     DefenceType: Special
     Position: Back
+    CharacterImage: CharacterImage/Jeongeun
   - ID: 1003
     Name: "\uD61C\uC9C4"
     Rank: 2
@@ -43,6 +45,7 @@ MonoBehaviour:
     AttackType: Mystic
     DefenceType: Heavy
     Position: Front
+    CharacterImage: CharacterImage/Hyejin
   - ID: 1004
     Name: "\uC8FC\uD76C"
     Rank: 2
@@ -53,6 +56,7 @@ MonoBehaviour:
     AttackType: Mystic
     DefenceType: Light
     Position: Back
+    CharacterImage: CharacterImage/Juhee
   - ID: 1005
     Name: "\uC7A5\uBBF8"
     Rank: 2
@@ -63,6 +67,7 @@ MonoBehaviour:
     AttackType: Explosive
     DefenceType: Heavy
     Position: Front
+    CharacterImage: CharacterImage/Jangmi
   - ID: 1006
     Name: "\uC9C0\uC6B0"
     Rank: 2
@@ -73,6 +78,7 @@ MonoBehaviour:
     AttackType: Piercing
     DefenceType: Special
     Position: Middle
+    CharacterImage: CharacterImage/Jiwoo
   - ID: 1007
     Name: "\uCC44\uC6D0"
     Rank: 1
@@ -83,6 +89,7 @@ MonoBehaviour:
     AttackType: Explosive
     DefenceType: Light
     Position: Back
+    CharacterImage: CharacterImage/Chaewon
   - ID: 1008
     Name: "\uC218\uC544"
     Rank: 1
@@ -93,6 +100,7 @@ MonoBehaviour:
     AttackType: Piercing
     DefenceType: Special
     Position: Middle
+    CharacterImage: CharacterImage/Sua
   - ID: 1009
     Name: "\uC720\uB098"
     Rank: 1
@@ -103,6 +111,7 @@ MonoBehaviour:
     AttackType: Mystic
     DefenceType: Special
     Position: Front
+    CharacterImage: CharacterImage/Yuna
   - ID: 1010
     Name: "\uC138\uC544"
     Rank: 1
@@ -113,104 +122,105 @@ MonoBehaviour:
     AttackType: Explosive
     DefenceType: Heavy
     Position: Back
+    CharacterImage: CharacterImage/Sea
   LevelData:
   - Level: 1
-    HP: 15
+    HP: 115
     Armor: 3
     Attack: 10
     Exp: 15
   - Level: 2
-    HP: 45
+    HP: 145
     Armor: 6
     Attack: 14
     Exp: 30
   - Level: 3
-    HP: 75
+    HP: 175
     Armor: 9
     Attack: 18
     Exp: 45
   - Level: 4
-    HP: 105
+    HP: 205
     Armor: 12
     Attack: 22
     Exp: 60
   - Level: 5
-    HP: 135
+    HP: 235
     Armor: 15
     Attack: 26
     Exp: 75
   - Level: 6
-    HP: 165
+    HP: 265
     Armor: 18
     Attack: 30
     Exp: 90
   - Level: 7
-    HP: 195
+    HP: 295
     Armor: 21
     Attack: 34
     Exp: 105
   - Level: 8
-    HP: 225
+    HP: 325
     Armor: 24
     Attack: 38
     Exp: 120
   - Level: 9
-    HP: 255
+    HP: 355
     Armor: 27
     Attack: 42
     Exp: 135
   - Level: 10
-    HP: 285
+    HP: 385
     Armor: 30
     Attack: 46
     Exp: 150
   - Level: 11
-    HP: 315
+    HP: 415
     Armor: 33
     Attack: 50
     Exp: 165
   - Level: 12
-    HP: 345
+    HP: 445
     Armor: 36
     Attack: 54
     Exp: 180
   - Level: 13
-    HP: 375
+    HP: 475
     Armor: 39
     Attack: 58
     Exp: 195
   - Level: 14
-    HP: 405
+    HP: 505
     Armor: 42
     Attack: 62
     Exp: 210
   - Level: 15
-    HP: 435
+    HP: 535
     Armor: 45
     Attack: 66
     Exp: 225
   - Level: 16
-    HP: 465
+    HP: 565
     Armor: 48
     Attack: 70
     Exp: 240
   - Level: 17
-    HP: 495
+    HP: 595
     Armor: 51
     Attack: 74
     Exp: 255
   - Level: 18
-    HP: 525
+    HP: 625
     Armor: 54
     Attack: 78
     Exp: 270
   - Level: 19
-    HP: 555
+    HP: 655
     Armor: 57
     Attack: 82
     Exp: 285
   - Level: 20
-    HP: 585
+    HP: 685
     Armor: 60
     Attack: 86
     Exp: 300

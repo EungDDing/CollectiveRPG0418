@@ -15,6 +15,7 @@ public class CharacterData_Entity
     public string AttackType;
     public string DefenceType;
     public string Position;
+    public string CharacterImage;
 }
 
 [System.Serializable]

@@ -3788,7 +3788,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2529187919028912833}
-  - component: {fileID: 4120946629931711427}
   - component: {fileID: 3436121459131656579}
   m_Layer: 0
   m_Name: Jiwoo
@@ -3815,27 +3814,6 @@ Transform:
   - {fileID: 6482517752511842934}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &4120946629931711427
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5797973026838658767}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: e2425d323ad15a14db2323ecd7b462ac, type: 3}
-  m_Controller: {fileID: 9100000, guid: 0d64c286960145a458c1bb7e7e5e028a, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &3436121459131656579
 MonoBehaviour:
   m_ObjectHideFlags: 0
