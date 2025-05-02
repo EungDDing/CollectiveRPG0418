@@ -14,7 +14,10 @@ public class CharacterCard : MonoBehaviour
     {
         if (DataManager.Instance.GetCharacterData(characterID, out CharacterData_Entity characterData))
         {
-            
+            image.sprite = Resources.Load<Sprite>(characterData.CharacterImage);
+            image.enabled = true;
+            nameText.text = characterData.Name.ToString();
+            Debug.Log(characterData.Name);
         }
     }
 }

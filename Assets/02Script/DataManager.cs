@@ -45,6 +45,7 @@ public class DataManager : Singleton<DataManager>
     }
     protected override void DoAwake()
     {
+        Debug.Log("데이터 매니저 호출");
         InitDataManager();
     }
     public Dictionary<int, CharacterData_Entity> GetAllCharacterData()

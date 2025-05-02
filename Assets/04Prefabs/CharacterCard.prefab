@@ -298,6 +298,7 @@ GameObject:
   - component: {fileID: 5534453694261439015}
   - component: {fileID: 3160151573286155940}
   - component: {fileID: 8784799828814870026}
+  - component: {fileID: -5711213855746201555}
   m_Layer: 5
   m_Name: CharacterCard
   m_TagString: Untagged
@@ -408,6 +409,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &-5711213855746201555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7133571411422054489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837e1cf0a690c9049bf1b37f13b7daab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1698536981129029285}
+  levelText: {fileID: 7184684998847892576}
+  nameText: {fileID: 7982874923521831290}
 --- !u!1 &8011210594252559571
 GameObject:
   m_ObjectHideFlags: 0
