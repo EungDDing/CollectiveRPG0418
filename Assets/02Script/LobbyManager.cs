@@ -14,12 +14,7 @@ public class LobbyManager : MonoBehaviour
     public void CharacterButton()
     {
         Debug.Log("»£√‚");
-        
-        for (int i = 0; i < GameManager.Instance.Data.playerCharacters.Count; i++)
-        {
-            DataManager.Instance.GetCharacterData(GameManager.Instance.Data.playerCharacters[i].characterID, out characterDataEntity);
-            Debug.Log(GameManager.Instance.Data.playerCharacters[i].characterID +
-                " : " +characterDataEntity.Name + " : " + GameManager.Instance.Data.playerCharacters[i].isOwned);
-        }
+
+        GameManager.Instance.AsyncLoadNextScene(SceneName.CharacterScene);
     }
 }

@@ -31,6 +31,7 @@ public enum SceneName
 {
     TitleScene,
     LobbyScene,
+    CharacterScene,
 }
 
 public class GameManager : Singleton<GameManager>
@@ -121,6 +122,6 @@ public class GameManager : Singleton<GameManager>
     public void AsyncLoadNextScene(SceneName nextScene)
     {
         nextSceneName = nextScene;
-        SceneManager.LoadScene(SceneName.LobbyScene.ToString());
+        SceneManager.LoadScene(nextScene.ToString());
     }
 }
