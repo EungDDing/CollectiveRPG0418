@@ -128,101 +128,121 @@ MonoBehaviour:
     HP: 115
     Armor: 3
     Attack: 10
+    Healing: 30
     Exp: 15
   - Level: 2
     HP: 145
     Armor: 6
     Attack: 14
+    Healing: 33
     Exp: 30
   - Level: 3
     HP: 175
     Armor: 9
     Attack: 18
+    Healing: 36
     Exp: 45
   - Level: 4
     HP: 205
     Armor: 12
     Attack: 22
+    Healing: 39
     Exp: 60
   - Level: 5
     HP: 235
     Armor: 15
     Attack: 26
+    Healing: 42
     Exp: 75
   - Level: 6
     HP: 265
     Armor: 18
     Attack: 30
+    Healing: 45
     Exp: 90
   - Level: 7
     HP: 295
     Armor: 21
     Attack: 34
+    Healing: 48
     Exp: 105
   - Level: 8
     HP: 325
     Armor: 24
     Attack: 38
+    Healing: 51
     Exp: 120
   - Level: 9
     HP: 355
     Armor: 27
     Attack: 42
+    Healing: 54
     Exp: 135
   - Level: 10
     HP: 385
     Armor: 30
     Attack: 46
+    Healing: 57
     Exp: 150
   - Level: 11
     HP: 415
     Armor: 33
     Attack: 50
+    Healing: 60
     Exp: 165
   - Level: 12
     HP: 445
     Armor: 36
     Attack: 54
+    Healing: 63
     Exp: 180
   - Level: 13
     HP: 475
     Armor: 39
     Attack: 58
+    Healing: 66
     Exp: 195
   - Level: 14
     HP: 505
     Armor: 42
     Attack: 62
+    Healing: 69
     Exp: 210
   - Level: 15
     HP: 535
     Armor: 45
     Attack: 66
+    Healing: 72
     Exp: 225
   - Level: 16
     HP: 565
     Armor: 48
     Attack: 70
+    Healing: 75
     Exp: 240
   - Level: 17
     HP: 595
     Armor: 51
     Attack: 74
+    Healing: 78
     Exp: 255
   - Level: 18
     HP: 625
     Armor: 54
     Attack: 78
+    Healing: 81
     Exp: 270
   - Level: 19
     HP: 655
     Armor: 57
     Attack: 82
+    Healing: 84
     Exp: 285
   - Level: 20
     HP: 685
     Armor: 60
     Attack: 86
+    Healing: 87
     Exp: 300
   PlayerLevelData:
   - PlayerLevel: 1

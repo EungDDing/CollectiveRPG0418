@@ -25,6 +25,7 @@ public class LevelData_Entity
     public int HP;
     public int Armor;
     public int Attack;
+    public int Healing;
     public int Exp;
 }
 

@@ -5,7 +5,6 @@ using UnityEngine;
 public class CharacterSceneManager : SingletonDestory<CharacterSceneManager>
 {
     private CharacterSceneUIManager uiManager;
-    private CharacterCard card;
 
     [SerializeField] private Transform characterPosition;
 
@@ -17,7 +16,6 @@ public class CharacterSceneManager : SingletonDestory<CharacterSceneManager>
         DataManager.Instance.InitDataManager();
         Debug.Log(GameManager.Instance.Data.playerID);
         uiManager = FindObjectOfType<CharacterSceneUIManager>();
-        card = FindObjectOfType<CharacterCard>();
     }
     private void Start()
     {
@@ -26,6 +24,6 @@ public class CharacterSceneManager : SingletonDestory<CharacterSceneManager>
     public void ShowCharacter(int id)
     {
         CharacterBase character = Resources.Load<CharacterBase>($"Characters/{id}");
-        Instantiate(character, characterPosition.position, Quaternion.identity);
+        Instantiate(character, characterPosition.position, Quaternion.Euler(0.0f, 160.0f, 0.0f));
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class CharacterSceneUIManager : MonoBehaviour
 {
@@ -9,6 +10,12 @@ public class CharacterSceneUIManager : MonoBehaviour
     [SerializeField] private ScrollRect scrollRect;
     [SerializeField] private GameObject cardPrefab;
     [SerializeField] private RectTransform contentTransform;
+
+    [SerializeField] private Image characterInfo;
+    [SerializeField] private TextMeshProUGUI hpText;
+    [SerializeField] private TextMeshProUGUI attackText;
+    [SerializeField] private TextMeshProUGUI armorText;
+    [SerializeField] private TextMeshProUGUI healingText;
 
     private List<CharacterCard> cards = new List<CharacterCard>();
     private CharacterCard card;
