@@ -9,12 +9,9 @@ public class LobbyManager : MonoBehaviour
     {
         GameManager.Instance.LoadData();
         DataManager.Instance.InitDataManager();
-        Debug.Log(GameManager.Instance.Data.playerID);
     }
     public void CharacterButton()
     {
-        Debug.Log("»£√‚");
-
         GameManager.Instance.AsyncLoadNextScene(SceneName.CharacterScene);
     }
 }

@@ -3791,7 +3791,7 @@ GameObject:
   - component: {fileID: 3436121459131656579}
   m_Layer: 0
   m_Name: 1006
-  m_TagString: Untagged
+  m_TagString: Character
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3837,11 +3837,13 @@ MonoBehaviour:
     AttackType: 
     DefenceType: 
     Position: 
+    CharacterImage: 
   levelData:
     Level: 0
     HP: 0
     Armor: 0
     Attack: 0
+    Healing: 0
     Exp: 0
 --- !u!1 &5810517031776057019
 GameObject:

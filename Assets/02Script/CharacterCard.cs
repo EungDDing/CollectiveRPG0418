@@ -26,7 +26,6 @@ public class CharacterCard : MonoBehaviour
             image.sprite = Resources.Load<Sprite>(characterData.CharacterImage);
             image.enabled = true;
             nameText.text = characterData.Name.ToString();
-            Debug.Log(characterData.Name);
         }
     }
     public void ClickCard()

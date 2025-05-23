@@ -16,6 +16,7 @@ public abstract class CharacterBase : MonoBehaviour
     private int armor;
     private int attack;
     private int exp;
+    private int healing;
 
     private void Start()
     {
@@ -52,6 +53,11 @@ public abstract class CharacterBase : MonoBehaviour
         get => attack;
         set => attack = value;
     }
+    public int Healing
+    {
+        get => healing;
+        set => healing = value;
+    }
     public int Exp
     {
         get => exp;
@@ -87,6 +93,7 @@ public abstract class CharacterBase : MonoBehaviour
         }
 
         maxHP = levelData.HP;
+        healing = levelData.Healing;
         exp = levelData.Exp;
     }
 }
