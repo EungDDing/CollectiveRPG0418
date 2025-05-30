@@ -35,36 +35,41 @@ public class CharacterSceneUIManager : MonoBehaviour
     private int cardCount;
 
     private readonly Dictionary<string, Image> roleDictionary = new Dictionary<string, Image>();
-    private readonly Dictionary<string, string> positionDictionary
-        = new Dictionary<string, string>()
-        {
-            { "Front", "FRONT" },
-            { "Middle", "Middle" },
-            { "Back", "Back" }
-        };
+
+    [SerializeField] private PositionUISet positionUISet;
+    private readonly Dictionary<string, string> positionDictionary = new Dictionary<string, string>();
+    
+    [SerializeField] private AttackTypeUISet attackTypeUISet;
     private readonly Dictionary<string, (Color color, string text)> attackTypeDictionary
-        = new Dictionary<string, (Color color, string text)>
-        {
-            { "Explosive", (new Color(190.0f / 255.0f, 136.0f / 255.0f, 1.0f / 255.0f), "Æø¹ß") },
-            { "Mystic", (new Color(34.0f / 255.0f, 111.0f / 255.0f, 155.0f / 255.0f), "½Åºñ") },
-            { "Piercing", (new Color(142.0f / 255.0f, 3.0f / 255.0f, 8.0f / 255.0f), "Æø¹ß") }
-        };
+        = new Dictionary<string, (Color color, string text)>();
+
+    [SerializeField] private DefenceTypeUISet defenceTypeUISet;
     private readonly Dictionary<string, (Color color, string text)> defenceTypeDictionary
-        = new Dictionary<string, (Color color, string text)>
-    {
-        { "Light", (new Color(142.0f / 255.0f, 3.0f / 255.0f, 8.0f / 255.0f), "°æÀå°©") },
-        { "Heavy", (new Color(190.0f / 255.0f, 136.0f / 255.0f, 1.0f / 255.0f), "ÁßÀå°©") },
-        { "Special", (new Color(34.0f / 255.0f, 111.0f / 255.0f, 155.0f / 255.0f), "Æ¯¼öÀå°©") }
-    };
+        = new Dictionary<string, (Color color, string text)>();
+    
     private readonly Dictionary<string, Image> weaponDictionary = new Dictionary<string, Image>();
 
     private void Awake()
     {
         InitCards();
 
+        foreach (PositionUIData data in positionUISet.positions)
+        {
+            positionDictionary[data.positionKey] = data.label;
+        }
+        foreach (AttackTypeUIData data in attackTypeUISet.attackTypes)
+        {
+            attackTypeDictionary[data.typeKey] = (data.color, data.label);
+        }
+
+        foreach (DefenceTypeUIData data in defenceTypeUISet.defenceTypes)
+        {
+            defenceTypeDictionary[data.typeKey] = (data.color, data.label);
+        }
+
         roleDictionary["Attack"] = roles[0];
-        roleDictionary["Defence"] = roles[1];
-        roleDictionary["Support"] = roles[2];
+        roleDictionary["Support"] = roles[1];
+        roleDictionary["Defence"] = roles[2];
 
         weaponDictionary["AR"] = weapons[0];
         weaponDictionary["HG"] = weapons[1];

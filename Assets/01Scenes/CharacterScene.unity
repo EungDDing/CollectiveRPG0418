@@ -3968,6 +3968,9 @@ MonoBehaviour:
   - {fileID: 844630401}
   - {fileID: 1274380741}
   - {fileID: 846182275}
+  positionUISet: {fileID: 11400000, guid: 9cfda4cdab227354abec929e602aa1c2, type: 2}
+  attackTypeUISet: {fileID: 11400000, guid: 64ac3d8fa23f7a143b9e2c965e413062, type: 2}
+  defenceTypeUISet: {fileID: 11400000, guid: 552ae8c40edf6d646b46a23039f5a977, type: 2}
 --- !u!4 &1112837342
 Transform:
   m_ObjectHideFlags: 0
