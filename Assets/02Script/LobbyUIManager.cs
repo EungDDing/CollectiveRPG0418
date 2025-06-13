@@ -22,6 +22,9 @@ public class LobbyUIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI playerLevelText;
     [SerializeField] private Image playerEXPImage;
     [SerializeField] private TextMeshProUGUI playerEXPText;
+    [SerializeField] private TextMeshProUGUI playerEnergyText;
+    [SerializeField] private TextMeshProUGUI playerCreditText;
+    [SerializeField] private TextMeshProUGUI playerGemText;
 
     private int playerLevel;
     private PlayerLevelData_Entity playerLevelData;
@@ -35,16 +38,23 @@ public class LobbyUIManager : MonoBehaviour
     }
     private void Start()
     {
-        StartCoroutine(RefreshPlayerProfile());
+        RefreshPlayerInfo();
     }
     // refresh UI
-    private IEnumerator RefreshPlayerProfile()
+    public void RefreshPlayerInfo()
+    {
+        StartCoroutine(RefreshPlayerInfoCoroutine());
+    }
+    private IEnumerator RefreshPlayerInfoCoroutine()
     {
         yield return null;
         LoadPlayerID();
         LoadPlayerLevel();
         GetPlayerLevelData();
         LoadPlayerEXP();
+        LoadPlayerEnergy();
+        LoadPlayerCredit();
+        LoadPlayerGem();
     }
     private void LoadPlayerID()
     {
@@ -65,6 +75,22 @@ public class LobbyUIManager : MonoBehaviour
         int maxEXP = playerLevelData.PlayerExp;
 
         playerEXPText.text = currentEXP.ToString() + "/" + maxEXP.ToString();
+        playerEXPImage.fillAmount = (float)currentEXP / maxEXP;
+    }
+    private void LoadPlayerEnergy()
+    {
+        int currentEnergy = GameManager.Instance.Data.energy;
+        int maxEnergy = playerLevelData.MaxEnergy;
+
+        playerEnergyText.text = currentEnergy.ToString() + "/" + maxEnergy.ToString();
+    }
+    private void LoadPlayerCredit()
+    {
+        playerCreditText.text = GameManager.Instance.Data.gold.ToString();
+    }
+    private void LoadPlayerGem()
+    {
+        playerGemText.text = GameManager.Instance.Data.gem.ToString();
     }
 
     // button
