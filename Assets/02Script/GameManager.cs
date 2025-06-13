@@ -114,6 +114,8 @@ public class GameManager : Singleton<GameManager>
         {
             return LoadData();
         }
+        Debug.Log("Failed to get player data");
+
         return false;
     }
     // scene manager

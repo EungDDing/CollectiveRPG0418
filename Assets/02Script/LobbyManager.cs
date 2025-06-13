@@ -7,11 +7,8 @@ public class LobbyManager : MonoBehaviour
     private CharacterData_Entity characterDataEntity;
     private void Start()
     {
-        GameManager.Instance.LoadData();
+        GameManager.Instance.GetPlayerData();
         DataManager.Instance.InitDataManager();
     }
-    public void CharacterButton()
-    {
-        GameManager.Instance.AsyncLoadNextScene(SceneName.CharacterScene);
-    }
+    
 }
