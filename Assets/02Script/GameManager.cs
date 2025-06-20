@@ -32,6 +32,7 @@ public enum SceneName
     TitleScene,
     LobbyScene,
     CharacterScene,
+    MissionScene,
 }
 
 public class GameManager : Singleton<GameManager>
