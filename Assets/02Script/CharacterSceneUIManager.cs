@@ -25,12 +25,18 @@ public class CharacterSceneUIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI defenceTypeText;
     [SerializeField] private List<Image> weapons;
 
+    [SerializeField] private Image skillImageBackground;
+    [SerializeField] private TextMeshProUGUI skillNameText;
+    [SerializeField] private TextMeshProUGUI skillInfoText;
+    [SerializeField] private TextMeshProUGUI skillCostText;
+
     private List<CharacterCard> cards = new List<CharacterCard>();
     private CharacterCard card;
 
     private CharacterBase characterBase;
 
     private CharacterData_Entity characterData;
+    private SkillData_Entity skillData;
 
     private int cardCount;
 
@@ -116,7 +122,13 @@ public class CharacterSceneUIManager : MonoBehaviour
     private void ShowCharacterInfo(int id)
     {
         characterBase = FindAnyObjectByType<CharacterBase>();
+        Debug.Log(id);
         DataManager.Instance.GetCharacterData(id, out characterData);
+        if (!DataManager.Instance.GetSkillData(id, out skillData))
+        {
+            Debug.LogError($"SkillData를 찾지 못함. ID: {id}");
+            return;
+        }
         int index = id - 1001;
         StartCoroutine(ShowInfo(id));
     }
@@ -147,6 +159,8 @@ public class CharacterSceneUIManager : MonoBehaviour
         {
             attackTypeImage.color = attackType.color;
             attackTypeText.text = attackType.text;
+
+            skillImageBackground.color = attackType.color;
         }
 
         if (defenceTypeDictionary.TryGetValue(characterData.DefenceType, out (Color color, string text) defenceType))
@@ -163,5 +177,9 @@ public class CharacterSceneUIManager : MonoBehaviour
         {
             weapon.gameObject.SetActive(true);
         }
+
+        skillNameText.text = skillData.Skill;
+        skillInfoText.text = skillData.SkillInfo;
+        skillCostText.text = "COST : " + skillData.SkillCost.ToString();
     }
 }

@@ -52,4 +52,5 @@ public class SkillData_Entity
     public string Skill;
     public int SkillCost;
     public int SkillRange;
+    public string SkillInfo;
 }

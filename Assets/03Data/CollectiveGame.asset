@@ -320,39 +320,57 @@ MonoBehaviour:
     Skill: "\uBB34\uCC28\uBCC4\uB09C\uC0AC"
     SkillCost: 3
     SkillRange: 5
+    SkillInfo: "360\uB3C4 \uBC94\uC704\uC5D0 \uACF5\uACA9\uB825 150% \uB300\uBBF8\uC9C0\uC758
+      \uCD1D\uC54C\uC744 \uBC1C\uC0AC\uD569\uB2C8\uB2E4."
   - ID: 1002
     Skill: "\uAFF0\uB6AB\uAE30"
     SkillCost: 3
     SkillRange: 7
+    SkillInfo: "\uD558\uB098\uC758 \uC801\uC5D0\uAC8C \uACF5\uACA9\uB825 300% \uB300\uBBF8\uC9C0\uB97C
+      \uAC00\uD558\uB294 \uCD1D\uC54C\uC744 \uBC1C\uC0AC\uD569\uB2C8\uB2E4."
   - ID: 1003
     Skill: "\uB2E8\uB2E8\uD574\uC9C0\uAE30"
     SkillCost: 3
     SkillRange: 0
+    SkillInfo: "\uC790\uC2E0\uC758 \uBC29\uC5B4\uB825\uC774 100% \uC99D\uAC00\uD569\uB2C8\uB2E4."
   - ID: 1004
     Skill: "\uCCB4\uB825\uD68C\uBCF5"
     SkillCost: 2
     SkillRange: 7
+    SkillInfo: "\uC790\uC2E0\uC758 \uCE58\uC720\uB825 100% \uB9CC\uD07C \uC544\uAD70
+      \uD55C \uBA85\uC758 \uCCB4\uB825\uC744 \uD68C\uBCF5\uD569\uB2C8\uB2E4."
   - ID: 1005
     Skill: "\uD3ED\uD0C4\uB358\uC9C0\uAE30"
     SkillCost: 4
     SkillRange: 4
+    SkillInfo: "\uACF5\uACA9\uB825 200% \uB300\uBBF8\uC9C0\uC758 \uD3ED\uD0C4\uC744
+      \uB358\uC838 150 \uBC94\uC704\uC5D0 \uD53C\uD574\uB97C \uC785\uD799\uB2C8\uB2E4."
   - ID: 1006
     Skill: "\uACF5\uACA9\uB825\uAC15\uD654"
     SkillCost: 2
     SkillRange: 0
+    SkillInfo: "\uC790\uC2E0\uC758 \uACF5\uACA9\uB825\uC774 100% \uC99D\uAC00\uD569\uB2C8\uB2E4."
   - ID: 1007
     Skill: "\uACF5\uACA9\uB825\uC9C0\uC6D0"
     SkillCost: 3
     SkillRange: 7
+    SkillInfo: "\uC544\uAD70 \uD55C \uBA85\uC758 \uACF5\uACA9\uB825\uC744 \uC790\uC2E0\uC758
+      \uACF5\uACA9\uB825 100%\uB9CC\uD07C \uC99D\uAC00\uC2DC\uD0B5\uB2C8\uB2E4."
   - ID: 1008
     Skill: "\uBAA8\uB4E0\uC801\uC800\uACA9"
     SkillCost: 4
     SkillRange: 7
+    SkillInfo: "\uACF5\uACA9\uB825 200% \uB300\uBBF8\uC9C0\uC758 \uCD1D\uC54C\uC744
+      \uBAA8\uB4E0 \uC801\uC5D0\uAC8C \uD55C \uBC1C\uC529 \uBC1C\uC0AC\uD569\uB2C8\uB2E4."
   - ID: 1009
     Skill: "\uC5C4\uD3D0\uBB3C\uC124\uCE58"
     SkillCost: 3
     SkillRange: 3
+    SkillInfo: "\uC9C0\uC815\uD55C \uACF3\uC5D0 \uC5C4\uD3D0\uBB3C\uC744 \uD558\uB098
+      \uC124\uCE58\uD569\uB2C8\uB2E4."
   - ID: 1010
     Skill: "\uBC29\uC5B4\uB825\uC9C0\uC6D0"
     SkillCost: 2
     SkillRange: 7
+    SkillInfo: "\uC544\uAD70 \uD55C \uBA85\uC758 \uBC29\uC5B4\uB825\uC744 \uC790\uC2E0\uC758
+      \uBC29\uC5B4\uB825 100%\uB9CC\uD07C \uC99D\uAC00\uC2DC\uD0B5\uB2C8\uB2E4."

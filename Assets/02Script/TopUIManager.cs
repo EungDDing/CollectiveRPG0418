@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -44,7 +45,8 @@ public class TopUIManager : MonoBehaviour
     {
         yield return null;
         GetPlayerLevelData();
-       
+
+        LoadSceneName();
         LoadPlayerEnergy();
         LoadPlayerCredit();
         LoadPlayerGem();
@@ -58,6 +60,14 @@ public class TopUIManager : MonoBehaviour
     private void LoadSceneName()
     {
         string sceneName = SceneManager.GetActiveScene().name;
+
+        if (Enum.TryParse(sceneName, out SceneName enumSceneName))
+        {
+            if (sceneNameDictionary.TryGetValue(enumSceneName, out string stringSceneName))
+            {
+                sceneNameText.text = stringSceneName;
+            }
+        }
     }
     private void LoadPlayerEnergy()
     {
