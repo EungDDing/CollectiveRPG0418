@@ -10,6 +10,9 @@ public class DataManager : Singleton<DataManager>
     private Dictionary<int, CharacterData_Entity> characterDataDictionary = new Dictionary<int, CharacterData_Entity>();
     private Dictionary<int, LevelData_Entity> levelDataDictionary = new Dictionary<int, LevelData_Entity>();
     private Dictionary<int, PlayerLevelData_Entity> playerLevelDataDictionary = new Dictionary<int, PlayerLevelData_Entity>();
+    private Dictionary<int, MissionData_Entity> missionDataDictionary = new Dictionary<int, MissionData_Entity>();
+    private Dictionary<int, SkillData_Entity> skillDataDictionary = new Dictionary<int, SkillData_Entity>();
+
     public bool GetCharacterData(int key, out CharacterData_Entity characterData)
     {
         return characterDataDictionary.TryGetValue(key, out characterData);
@@ -22,6 +25,14 @@ public class DataManager : Singleton<DataManager>
     public bool GetPlayerLevelData(int playerLevel, out PlayerLevelData_Entity playerLevelData)
     {
         return playerLevelDataDictionary.TryGetValue(playerLevel, out playerLevelData);
+    }
+    public bool GetMissionData(int missionID, out MissionData_Entity missionData)
+    {
+        return missionDataDictionary.TryGetValue(missionID, out missionData);
+    }
+    public bool GetSkillData(int ID, out SkillData_Entity skillData)
+    {
+        return skillDataDictionary.TryGetValue(ID, out skillData);
     }
     public void InitDataManager()
     {
@@ -40,6 +51,14 @@ public class DataManager : Singleton<DataManager>
             for (int i = 0; i < dataTable.PlayerLevelData.Count; i++)
             {
                 playerLevelDataDictionary.Add(dataTable.PlayerLevelData[i].PlayerLevel, dataTable.PlayerLevelData[i]);
+            }
+            for (int i = 0; i < dataTable.MissionData.Count; i++)
+            {
+                missionDataDictionary.Add(dataTable.MissionData[i].MissionID, dataTable.MissionData[i]);
+            }
+            for (int i = 0; i < dataTable.SkillData.Count; i++)
+            {
+                skillDataDictionary.Add(dataTable.SkillData[i].ID, dataTable.SkillData[i]);
             }
         }
     }

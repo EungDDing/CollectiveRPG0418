@@ -19,7 +19,7 @@ MonoBehaviour:
     Weapon: AR
     Role: Attack
     Skill: "\uBB34\uCC28\uBCC4\uB09C\uC0AC"
-    SkillCost: 3
+    AttackRange: 5
     AttackType: Explosive
     DefenceType: Light
     Position: Middle
@@ -30,7 +30,7 @@ MonoBehaviour:
     Weapon: SR
     Role: Attack
     Skill: "\uAFF0\uB6AB\uAE30"
-    SkillCost: 3
+    AttackRange: 7
     AttackType: Piercing
     DefenceType: Special
     Position: Back
@@ -41,7 +41,7 @@ MonoBehaviour:
     Weapon: SMG
     Role: Defence
     Skill: "\uB2E8\uB2E8\uD574\uC9C0\uAE30"
-    SkillCost: 3
+    AttackRange: 3
     AttackType: Mystic
     DefenceType: Heavy
     Position: Front
@@ -52,7 +52,7 @@ MonoBehaviour:
     Weapon: HG
     Role: Support
     Skill: "\uCCB4\uB825\uD68C\uBCF5"
-    SkillCost: 2
+    AttackRange: 7
     AttackType: Mystic
     DefenceType: Light
     Position: Back
@@ -63,7 +63,7 @@ MonoBehaviour:
     Weapon: SG
     Role: Attack
     Skill: "\uD3ED\uD0C4\uB358\uC9C0\uAE30"
-    SkillCost: 4
+    AttackRange: 3
     AttackType: Explosive
     DefenceType: Heavy
     Position: Front
@@ -73,8 +73,8 @@ MonoBehaviour:
     Rank: 2
     Weapon: AR
     Role: Attack
-    Skill: "\uAC15\uD654"
-    SkillCost: 2
+    Skill: "\uACF5\uACA9\uB825\uAC15\uD654"
+    AttackRange: 5
     AttackType: Piercing
     DefenceType: Special
     Position: Middle
@@ -85,7 +85,7 @@ MonoBehaviour:
     Weapon: SMG
     Role: Support
     Skill: "\uC544\uAD70\uC9C0\uC6D0"
-    SkillCost: 3
+    AttackRange: 7
     AttackType: Explosive
     DefenceType: Light
     Position: Back
@@ -96,7 +96,7 @@ MonoBehaviour:
     Weapon: SR
     Role: Attack
     Skill: "\uBAA8\uB4E0\uC801\uC800\uACA9"
-    SkillCost: 4
+    AttackRange: 5
     AttackType: Piercing
     DefenceType: Special
     Position: Middle
@@ -107,7 +107,7 @@ MonoBehaviour:
     Weapon: SG
     Role: Defence
     Skill: "\uC5C4\uD3D0\uBB3C\uC124\uCE58"
-    SkillCost: 3
+    AttackRange: 3
     AttackType: Mystic
     DefenceType: Special
     Position: Front
@@ -118,7 +118,7 @@ MonoBehaviour:
     Weapon: HG
     Role: Support
     Skill: "\uBC29\uC5B4\uC9C0\uC6D0"
-    SkillCost: 2
+    AttackRange: 7
     AttackType: Explosive
     DefenceType: Heavy
     Position: Back
@@ -305,3 +305,54 @@ MonoBehaviour:
   - PlayerLevel: 20
     MaxEnergy: 250
     PlayerExp: 10000
+  MissionData:
+  - MissionID: 101
+    Mission: 1
+    Stage: 1
+  - MissionID: 102
+    Mission: 1
+    Stage: 2
+  - MissionID: 103
+    Mission: 1
+    Stage: 3
+  SkillData:
+  - ID: 1001
+    Skill: "\uBB34\uCC28\uBCC4\uB09C\uC0AC"
+    SkillCost: 3
+    SkillRange: 5
+  - ID: 1002
+    Skill: "\uAFF0\uB6AB\uAE30"
+    SkillCost: 3
+    SkillRange: 7
+  - ID: 1003
+    Skill: "\uB2E8\uB2E8\uD574\uC9C0\uAE30"
+    SkillCost: 3
+    SkillRange: 0
+  - ID: 1004
+    Skill: "\uCCB4\uB825\uD68C\uBCF5"
+    SkillCost: 2
+    SkillRange: 7
+  - ID: 1005
+    Skill: "\uD3ED\uD0C4\uB358\uC9C0\uAE30"
+    SkillCost: 4
+    SkillRange: 4
+  - ID: 1006
+    Skill: "\uACF5\uACA9\uB825\uAC15\uD654"
+    SkillCost: 2
+    SkillRange: 0
+  - ID: 1007
+    Skill: "\uACF5\uACA9\uB825\uC9C0\uC6D0"
+    SkillCost: 3
+    SkillRange: 7
+  - ID: 1008
+    Skill: "\uBAA8\uB4E0\uC801\uC800\uACA9"
+    SkillCost: 4
+    SkillRange: 7
+  - ID: 1009
+    Skill: "\uC5C4\uD3D0\uBB3C\uC124\uCE58"
+    SkillCost: 3
+    SkillRange: 3
+  - ID: 1010
+    Skill: "\uBC29\uC5B4\uB825\uC9C0\uC6D0"
+    SkillCost: 2
+    SkillRange: 7
