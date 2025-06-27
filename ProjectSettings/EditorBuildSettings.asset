@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01Scenes/MissionScene.unity
     guid: 41070e5f09a25a14495ba848ba273ea6
+  - enabled: 1
+    path: Assets/01Scenes/FormationScene.unity
+    guid: 7265a0a3b8ce2c84b9db2d33f8af971b
   m_configObjects: {}

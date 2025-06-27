@@ -33,6 +33,7 @@ public enum SceneName
     LobbyScene,
     CharacterScene,
     MissionScene,
+    FormationScene,
 }
 
 public class GameManager : Singleton<GameManager>

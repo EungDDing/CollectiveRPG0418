@@ -17,3 +17,5 @@ MonoBehaviour:
     sceneNameText: "\uCE90\uB9AD\uD130"
   - sceneName: 3
     sceneNameText: "\uC784\uBB34"
+  - sceneName: 4
+    sceneNameText: "\uD3B8"
