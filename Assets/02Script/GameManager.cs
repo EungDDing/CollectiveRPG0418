@@ -11,7 +11,6 @@ public class PlayerCharacterData
     public int level;
     public int exp;
     public bool isOwned;
-    public bool isAllocated;
 }
 
 [System.Serializable]
@@ -25,6 +24,7 @@ public class PlayerData
     public int energy;
 
     public List<PlayerCharacterData> playerCharacters;
+    public List<int> formation01CharacterList;
 }
 
 public enum SceneName
@@ -78,12 +78,13 @@ public class GameManager : Singleton<GameManager>
             playerCharacterData.level = 1;
             playerCharacterData.exp = 0;
             playerCharacterData.isOwned = false;
-            playerCharacterData.isAllocated = false;
 
             data.playerCharacters.Add(playerCharacterData);
 
             // collect character
         }
+
+        data.formation01CharacterList = new List<int>() { -1, -1, -1, -1 };
     }
     // save & load player data
     private string dataPath;
