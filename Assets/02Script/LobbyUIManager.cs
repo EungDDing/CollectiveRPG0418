@@ -177,7 +177,7 @@ public class LobbyUIManager : MonoBehaviour
                 GoCharacterScene();
                 break;
             case Buttontype.Formation:
-                Debug.Log("Formation Button");
+                GoFormationScene();
                 break;
             case Buttontype.Shop:
                 Debug.Log("Shop Button");
@@ -205,5 +205,9 @@ public class LobbyUIManager : MonoBehaviour
     public void GoCharacterScene()
     {
         GameManager.Instance.AsyncLoadNextScene(SceneName.CharacterScene);
+    }
+    public void GoFormationScene()
+    {
+        GameManager.Instance.AsyncLoadNextScene(SceneName.FormationScene);
     }
 }
