@@ -67,7 +67,6 @@ public class CharacterSceneUIManager : MonoBehaviour
         {
             attackTypeDictionary[data.typeKey] = (data.color, data.label);
         }
-
         foreach (DefenceTypeUIData data in defenceTypeUISet.defenceTypes)
         {
             defenceTypeDictionary[data.typeKey] = (data.color, data.label);
@@ -119,17 +118,15 @@ public class CharacterSceneUIManager : MonoBehaviour
     {
         characterListImage.gameObject.LeanScale(Vector3.zero, 0.3f).setEase(LeanTweenType.easeInOutElastic);
     }
+    
+    // character info
     private void ShowCharacterInfo(int id)
     {
         characterBase = FindAnyObjectByType<CharacterBase>();
         Debug.Log(id);
         DataManager.Instance.GetCharacterData(id, out characterData);
-        if (!DataManager.Instance.GetSkillData(id, out skillData))
-        {
-            Debug.LogError($"SkillData를 찾지 못함. ID: {id}");
-            return;
-        }
-        int index = id - 1001;
+        DataManager.Instance.GetSkillData(id, out skillData);
+  
         StartCoroutine(ShowInfo(id));
     }
     private IEnumerator ShowInfo(int id)
