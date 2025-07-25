@@ -62,6 +62,8 @@ public class FormationSceneUIManager : MonoBehaviour
 
     private void Awake()
     {
+        characterId = 0;
+
         InitCard();
 
         foreach (PositionUIData data in positionUISet.positions)
@@ -108,7 +110,6 @@ public class FormationSceneUIManager : MonoBehaviour
             // set event
             miniCards[i].OnClickMiniCharacterCard -= showCharacterInfo;
             miniCards[i].OnClickMiniCharacterCard += showCharacterInfo;
-
         }
     }
 
@@ -118,15 +119,21 @@ public class FormationSceneUIManager : MonoBehaviour
         DataManager.Instance.GetCharacterData(id, out characterData);
         DataManager.Instance.GetSkillData(id, out skillData);
 
-        characterId = id;
+        if (characterId == id)
+        {
+            characterInfo.gameObject.SetActive(false);
+            characterId = 0;
+        }
+        else if (characterId != id)
+        {
+            characterId = id;
+            characterInfo.gameObject.SetActive(true);
+        }
 
         StartCoroutine(ShowInfo(id));
     }
     private IEnumerator ShowInfo(int id)
     {
-        
-        characterInfo.gameObject.SetActive(true);
-
         yield return null;
 
         characterImage.sprite = Resources.Load<Sprite>(characterData.CharacterImage);

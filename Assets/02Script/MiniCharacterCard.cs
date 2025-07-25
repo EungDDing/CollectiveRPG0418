@@ -9,8 +9,10 @@ public class MiniCharacterCard : MonoBehaviour
     [SerializeField] private Image characterImage;
     [SerializeField] private Image frame;
     [SerializeField] private TextMeshProUGUI nameText;
+    [SerializeField] private Image selectedFrame;
 
     private int id;
+    private bool isSelected;
 
     public delegate void CharacterID(int id);
     public event CharacterID OnClickMiniCharacterCard;
@@ -21,6 +23,7 @@ public class MiniCharacterCard : MonoBehaviour
 
     private void Awake()
     {
+        isSelected = false;
         foreach (AttackTypeUIData data in attackTypeUISet.attackTypes)
         {
             attackTypeDictionary[data.typeKey] = (data.color, data.label);
@@ -45,7 +48,9 @@ public class MiniCharacterCard : MonoBehaviour
     
     public void ClickMiniCard()
     {
+        isSelected = !isSelected;
         Debug.Log("call event(mini card)" + id);
         OnClickMiniCharacterCard?.Invoke(id);
+        selectedFrame.gameObject.SetActive(isSelected);
     }
 }
